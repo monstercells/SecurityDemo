@@ -1,6 +1,7 @@
 package com.example.demo4.service;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.example.demo4.POJO.LoginUser;
 import com.example.demo4.POJO.SysUser;
 import com.example.demo4.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +26,6 @@ public class UserDetailServiceImpl implements UserDetailsService {
             throw new RuntimeException("用户名错误");
         }
 
-        return null;
+        return new LoginUser(user);
     }
 }

@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @TableName("sys_user")
 public class SysUser {
 
-  private long id;
+  private Long id;
   private String userName;
   private String nickName;
   private String password;
